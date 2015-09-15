@@ -1,0 +1,19 @@
+{
+  "name": "gh-pages",
+  "private": true,
+  "dependencies": {
+    "dacoda": "^2.0.0",
+    "perfectionist": "^2.1.0",
+    "postcss": "^5.0.6",
+    "postcss-apply": "^0.1.0",
+    "postcss-custom-media": "^5.0.0",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-custom-selectors": "^3.0.0",
+    "postcss-media-minmax": "^2.1.0",
+    "postcss-nesting": "^2.0.4"
+  },
+  "scripts": {
+    "build": "browserify index.source.js | uglifyjs -c > index.js",
+    "watch": "watchify index.source.js -o index.js"
+  }
+}
